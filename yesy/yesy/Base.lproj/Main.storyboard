@@ -1,0 +1,53 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="16096" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="JCI-Aw-MQh">
+    <device id="retina4_7" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="16087"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--View Controller-->
+        <scene sceneID="TIe-5a-hHS">
+            <objects>
+                <viewController id="JCI-Aw-MQh" customClass="ViewController" customModule="yesy" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="DGz-Ey-PXR">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <collectionView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" bounces="NO" alwaysBounceHorizontal="YES" pagingEnabled="YES" dataMode="prototypes" translatesAutoresizingMaskIntoConstraints="NO" id="7YN-Hc-quc">
+                                <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                                <color key="backgroundColor" systemColor="systemYellowColor" red="1" green="0.80000000000000004" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <collectionViewFlowLayout key="collectionViewLayout" scrollDirection="horizontal" automaticEstimatedItemSize="YES" minimumLineSpacing="10" minimumInteritemSpacing="10" id="sj7-lh-WzH">
+                                    <size key="itemSize" width="128" height="128"/>
+                                    <size key="headerReferenceSize" width="0.0" height="0.0"/>
+                                    <size key="footerReferenceSize" width="0.0" height="0.0"/>
+                                    <inset key="sectionInset" minX="0.0" minY="0.0" maxX="0.0" maxY="0.0"/>
+                                </collectionViewFlowLayout>
+                                <cells/>
+                                <connections>
+                                    <outlet property="dataSource" destination="JCI-Aw-MQh" id="vLD-B4-c0a"/>
+                                    <outlet property="delegate" destination="JCI-Aw-MQh" id="9pp-WI-xtA"/>
+                                </connections>
+                            </collectionView>
+                        </subviews>
+                        <color key="backgroundColor" systemColor="linkColor" red="0.0" green="0.47843137250000001" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <constraints>
+                            <constraint firstItem="7YN-Hc-quc" firstAttribute="top" secondItem="MJh-U5-ZMO" secondAttribute="top" id="0xi-if-OeF"/>
+                            <constraint firstItem="MJh-U5-ZMO" firstAttribute="bottom" secondItem="7YN-Hc-quc" secondAttribute="bottom" id="Eoi-g2-Xiv"/>
+                            <constraint firstItem="MJh-U5-ZMO" firstAttribute="trailing" secondItem="7YN-Hc-quc" secondAttribute="trailing" id="gC0-DU-zrY"/>
+                            <constraint firstItem="7YN-Hc-quc" firstAttribute="leading" secondItem="MJh-U5-ZMO" secondAttribute="leading" id="hxr-Yb-3gz"/>
+                        </constraints>
+                        <viewLayoutGuide key="safeArea" id="MJh-U5-ZMO"/>
+                    </view>
+                    <connections>
+                        <outlet property="customCollectionView" destination="7YN-Hc-quc" id="aWk-NL-HD4"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="0Va-vC-X5L" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="253" y="-159"/>
+        </scene>
+    </scenes>
+</document>
